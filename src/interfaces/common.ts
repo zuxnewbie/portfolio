@@ -1,0 +1,1 @@
+// Mọi interface khác model

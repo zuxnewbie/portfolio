@@ -1,0 +1,265 @@
+@use "@/app/globals.scss" as *;
+
+footer {
+  // background: var(--color-grey-900);
+  background: #121a33;
+  .footer-container {
+    display: flex;
+    top: 10rem;
+    justify-content: center;
+    flex-direction: column;
+
+    .footer-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 4rem 4rem 4rem;
+      gap: 6rem;
+      margin: 0 auto;
+      align-items: center;
+      .information-container {
+        // width: 40%;
+        width: calc(33% - 6rem);
+        .information-left {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          // margin-top: -15px;
+
+          &-logo {
+            background: transparent;
+          }
+          &-text {
+            text-align: center;
+            color: var(--color-white);
+          }
+
+          .footer-contact-box {
+            &-title {
+              font-size: 2.5rem;
+              font-weight: 400;
+              color: var(--color-white);
+            }
+
+            &-content {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 1rem;
+              a {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 1rem;
+                color: var(--color-white);
+                margin-top: 0.5rem;
+                svg {
+                  height: 1.4rem;
+                  width: 1.4rem;
+                }
+              }
+            }
+
+            @include resTL() {
+              .footer-contact-box {
+                &-title {
+                  font-size: 2.5rem;
+                  font-weight: 400;
+                  color: var(--color-white);
+                }
+
+                &-content {
+                  a {
+                    padding-bottom: 5px;
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 1rem;
+                    color: var(--color-white);
+                    align-items: center;
+
+                    svg {
+                      height: 1.4rem;
+                      width: 1.4rem;
+                    }
+                  }
+                }
+              }
+            }
+            @include resMB() {
+              width: 100%;
+            }
+          }
+
+          .footer-bottom {
+            padding: 4rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 2rem;
+
+            // svg {
+            //     height: 2.2rem;
+            //     width: 2.2rem;
+            //     color: var(--color-white);
+            // }
+
+            &-content {
+              font-size: 1.6rem;
+              font-weight: 500;
+              text-align: center;
+              color: var(--color-white);
+            }
+            @include resMB() {
+              padding: 2rem;
+              &-content {
+                padding: 0 1.1rem;
+              }
+            }
+          }
+        }
+
+        @include resLAP() {
+          gap: 3rem;
+          .information-left {
+            &-logo {
+              width: 80%;
+            }
+            &-text {
+              font-size: 2rem;
+            }
+          }
+        }
+
+        @include resTL() {
+          display: flex;
+          flex-direction: column;
+          gap: 4rem;
+          // width: 100%;
+          .information-left {
+            &-box {
+              .box-left,
+              .box-right {
+                font-size: 2.8rem;
+              }
+            }
+
+            .box-content {
+              padding-top: 1rem;
+              font-size: 1.6rem;
+            }
+          }
+        }
+
+        @include resMB() {
+          display: flex;
+          flex-direction: column;
+          gap: 4rem;
+          width: 100%;
+        }
+      }
+
+      .information-middle {
+        margin-top: 6rem;
+        width: calc(33% - 6rem);
+
+        @include resTL {
+          margin-top: 1rem;
+          margin-bottom: 2rem;
+          width: 100%;
+
+          .location {
+            h5 {
+              display: none;
+            }
+          }
+        }
+        .location {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          // height: 100%;
+          justify-content: space-between;
+
+          h5 {
+            color: #fff;
+            font-weight: 700;
+          }
+
+          span {
+            color: #fff;
+            text-wrap: wrap;
+            text-align: center;
+          }
+
+          &-map {
+            iframe {
+              height: 14rem;
+              width: 100%;
+            }
+          }
+        }
+
+        .dark-mode {
+          filter: invert(1) hue-rotate(180deg);
+        }
+      }
+
+      .information-right {
+        margin-top: 6rem;
+        width: calc(33% - 6rem);
+
+        @include resTL {
+          margin-top: 1rem;
+          margin-bottom: 2rem;
+          width: 100%;
+        }
+        .address {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          justify-content: center;
+
+          .located, .phone, .website{
+            display: flex;
+            font-size: 1.5rem;
+            color: #fff;
+            align-items: center;
+
+            svg{
+              font-size: 2rem;
+              margin-right: 1rem;
+            }
+          }
+          .website{
+            a{
+              color: #fff;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    @include resLAP() {
+      padding: 2rem 2rem 0 2rem;
+      .footer-item {
+        display: flex;
+        gap: 4rem;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+    }
+
+    @include resTL() {
+      .footer-item {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+  }
+}
