@@ -1,3 +1,56 @@
 @use "@/app/globals.scss" as *;
 
+.home-hero {
+  background-image: url("../../assets/img/common-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  &-content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    .my-name {
+      font-size: 6rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-align: center;
+      color: var(--color-black);
+      font-weight: 800;
+    }
+    .info {
+      margin: 3rem auto 0 auto;
+      max-width: 80rem;
+      p {
+        color: var(--color-grey);
+        font-size: 2.2rem;
+        text-align: center;
+        width: 100%;
+        line-height: 1.6;
+      }
+    }
+    .more {
+      text-align: center;
+      .button {
+        padding: 1.5rem 8rem;
+        font-size: 2rem;
+        background: #7843e9;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: inline-block;
+        font-weight: 700;
+        border-radius: 5px;
+        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s;
 
+        &:hover{
+            transform: translateY(-6px);
+        }
+      }
+    }
+  }
+}

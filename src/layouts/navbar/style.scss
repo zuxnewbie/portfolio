@@ -1,2 +1,117 @@
 @use "@/app/globals.scss" as *;
 
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background: var(--color-white);
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    .logo {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: #333;
+      transition: color 0.3s;
+      &:hover {
+        color: #7843e9;
+      }
+      .logo-img {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50px;
+        overflow: hidden;
+        margin-right: 1.5rem;
+        background: #7843e9;
+        .my-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          display: block;
+        }
+      }
+      span {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+    }
+    .main {
+      .list {
+        display: flex;
+        &-links {
+          .link-item {
+            padding: 2.2rem 3rem;
+            display: inline-block;
+            font-size: 1.6rem;
+            color: var(--color-black);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            transition: color 0.3s;
+            &:hover {
+              color: #7843e9;
+            }
+          }
+        }
+      }
+      .hamburger {
+        display: none;
+        font-size: 3rem;
+        padding: 2.2rem 0;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__sm-menu{
+    display: none;
+    background: var(--color-white);
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    transition: all .3s;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+    .content{
+        .list{
+            .list-links{
+                .link-item{
+                    display: block;
+                    padding: 2.5rem 3rem;
+                    font-size: 1.6rem;
+                    color: var(--color-grey-600);
+                    text-align: left;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                    transition: color .3s;
+                    border-top: 1px solid var(--color-grey-400);
+                }
+            }
+        }
+    }
+}
+
+  @include resTL {
+    &__content {
+      .main {
+        .list {
+          display: none;
+        }
+        .hamburger {
+          display: block;
+        }
+      }
+    }
+    &__sm-menu{
+        display: block;
+    }
+  }
+}

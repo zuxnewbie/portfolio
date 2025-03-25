@@ -1,2 +1,116 @@
 @use "@/app/globals.scss" as *;
 
+.section-4 {
+  padding: 12rem 0;
+  background: linear-gradient(
+        to right,
+        rgba(245, 245, 245, 0.8),
+        rgba(245, 245, 245, 0.8)
+      )
+      center center / cover,
+    url(../../assets/img/common-bg.png);
+  background-position: center center;
+  &-content {
+    margin: auto;
+    .heading {
+      margin-bottom: 9rem;
+      .title {
+        display: block;
+        font-size: 4rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        text-align: center;
+        margin-bottom: 3.5rem;
+        position: relative;
+        color: rgb(17, 17, 17);
+        font-weight: 800;
+        &::after {
+          content: "";
+          position: absolute;
+          top: calc(100% + 1.5rem);
+          height: 5px;
+          width: 3rem;
+          left: 50%;
+          transform: translateX(-50%);
+          background: rgb(120, 67, 233);
+          border-radius: 5px;
+        }
+      }
+      .des {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+        max-width: 80rem;
+        line-height: 1.6;
+        margin: auto;
+        color: rgb(51, 51, 51);
+      }
+    }
+    .form {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      max-width: 80rem;
+      text-align: right;
+      width: 95%;
+      background: white;
+      padding: 4rem;
+      border-radius: 5px;
+      margin: 5rem auto 0px;
+      .field {
+        margin-bottom: 4rem;
+        label {
+          color: rgb(102, 102, 102);
+          font-size: 1.4rem;
+          letter-spacing: 1px;
+          font-weight: 700;
+          margin-bottom: 1rem;
+          display: block;
+          text-align: left;
+        }
+        input {
+          color: rgb(51, 51, 51);
+          width: 100%;
+          font-size: 1.6rem;
+          letter-spacing: 0px;
+          font-weight: 600;
+          padding: 2rem;
+          border-width: 1px;
+          border-style: solid;
+          border-color: rgb(235, 235, 235);
+          border-image: initial;
+          background: rgb(240, 240, 240);
+          border-radius: 5px;
+        }
+        textarea {
+          color: rgb(51, 51, 51);
+          width: 100%;
+          font-size: 1.6rem;
+          letter-spacing: 0px;
+          font-weight: 600;
+          padding: 2rem;
+          border-width: 1px;
+          border-style: solid;
+          border-color: rgb(235, 235, 235);
+          border-image: initial;
+          background: rgb(240, 240, 240);
+          border-radius: 5px;
+        }
+      }
+
+      .btn-contact {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: inline-block;
+        font-weight: 700;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        border-radius: 5px;
+        transition: transform 0.3s;
+        color: rgb(255, 255, 255);
+        background: rgb(120, 67, 233);
+        width: 30%;
+        font-size: 1.6rem;
+        padding: 2rem 4rem;
+      }
+    }
+  }
+}

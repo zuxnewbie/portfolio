@@ -1,11 +1,20 @@
 import React from 'react'
 import './style.scss'
+import Link from 'next/link'
 
 function Section1() {
     return (
-        <div className="section-1 container-pub">
-            
-        </div>
+        <section className="home-hero">
+            <div className="home-hero-content container-pub">
+                <h1 className='my-name'>Hey, I&apos;m The Vu</h1>
+                <div className='info'>
+                    <p>abcdefgh</p>
+                </div>
+                <div className='more'>
+                    <Link href={'#'} className='button'>projects</Link>
+                </div>
+            </div>
+        </section>
     )
 }
 

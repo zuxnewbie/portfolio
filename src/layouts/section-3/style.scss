@@ -1,3 +1,91 @@
 @use "@/app/globals.scss" as *;
 
+.section-3 {
+  padding: 12rem 0;
+  &-content {
+    margin: auto;
+    .title {
+      margin-bottom: 10rem;
+      .main {
+        display: block;
+        font-size: 4rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        text-align: center;
+        margin-bottom: 3.5rem;
+        position: relative;
+        color: rgb(17, 17, 17);
+        &::after {
+          content: "";
+          position: absolute;
+          top: calc(100% + 1.5rem);
+          height: 5px;
+          width: 3rem;
+          left: 50%;
+          transform: translateX(-50%);
+          background: rgb(120, 67, 233);
+          border-radius: 5px;
+        }
+      }
 
+      .sub {
+        display: block;
+        text-align: center;
+        color: rgb(85, 85, 85);
+        font-size: 2rem;
+        font-weight: 500;
+        max-width: 80rem;
+        line-height: 1.6;
+        margin: auto;
+      }
+    }
+    .projects-content {
+      .project-item {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        margin-bottom: 11rem;
+        gap: 5rem;
+        .left {
+          overflow: hidden;
+          .img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+          }
+        }
+        .right {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 2rem 0px;
+          h3 {
+            font-weight: 700;
+            font-size: 2.8rem;
+            margin-bottom: 2rem;
+          }
+          span {
+            font-size: 1.8rem;
+            color: rgb(102, 102, 102);
+            max-width: 60rem;
+            line-height: 1.7;
+            margin-bottom: 3rem;
+          }
+          a {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            font-weight: 700;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+            font-size: 1.6rem;
+            padding: 1.5rem 5rem;
+            color: rgb(255, 255, 255);
+            background: rgb(120, 67, 233);
+          }
+        }
+      }
+    }
+  }
+}
