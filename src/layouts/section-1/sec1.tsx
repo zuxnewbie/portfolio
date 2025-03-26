@@ -6,9 +6,9 @@ function Section1() {
     return (
         <section className="home-hero">
             <div className="home-hero-content container-pub">
-                <h1 className='my-name'>Hey, I&apos;m The Vu</h1>
+                <h1 className='my-name'>Hey, I&apos;m The Zux</h1>
                 <div className='info'>
-                    <p>abcdefgh</p>
+                    <p>Tôi là một Nhà phát triển Web Frontend, chuyên xây dựng giao diện người dùng hiện đại và tối ưu trải nghiệm trên web. Với niềm đam mê công nghệ, tôi không ngừng học hỏi và nâng cao kỹ năng để tạo ra những sản phẩm chất lượng.</p>
                 </div>
                 <div className='more'>
                     <Link href={'#'} className='button'>projects</Link>

@@ -1,7 +1,6 @@
 @use "@/app/globals.scss" as *;
 
 .footer {
-  padding: 12rem 0;
   color: rgb(255, 255, 255);
   background: rgb(0, 0, 0);
   &-content {
@@ -11,11 +10,14 @@
       justify-content: space-between;
       padding: 8rem 0px;
       .text {
-        order: 2;
+        order: 1;
+        width: 40%;
+        max-width: 50rem;
         h2 {
           font-size: 2.2rem;
           text-transform: uppercase;
           letter-spacing: 1px;
+          color: #fff;
         }
         .desc {
           margin-top: 2rem;
@@ -25,27 +27,38 @@
         }
       }
       .social {
-        width: 40%;
-        order: 1;
-        max-width: 50rem;
+        order: 2;
         h2 {
           font-size: 2.2rem;
           text-transform: uppercase;
           letter-spacing: 1px;
+          color: #fff;
         }
         .list {
           margin-top: 2rem;
+          display: flex;
+          gap: 2rem;
           .link-social {
             color: inherit;
+            font-size: 2.5rem;
             .icon {
               margin-right: 1rem;
-              width: 2.5rem;
             }
           }
         }
       }
     }
     .lower {
+      padding: 4rem 0;
+      border-top: 1px solid #444;
+      color: #eee;
+      font-size: 1.2rem;
+      text-align: center;
+      a {
+        text-decoration: underline;
+        font-weight: bold;
+        margin-left: 2px;
+      }
     }
   }
 }

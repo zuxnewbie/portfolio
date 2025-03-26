@@ -8,8 +8,8 @@
         rgba(245, 245, 245, 0.8)
       )
       center center / cover,
-    url(../../assets/img/common-bg.png);
-  background-position: center center;
+    url(../../assets/img/bg.jpg);
+      background-position: center center;
   &-content {
     margin: auto;
     .heading {
@@ -110,6 +110,17 @@
         width: 30%;
         font-size: 1.6rem;
         padding: 2rem 4rem;
+      }
+    }
+  }
+  @include resTL {
+    padding: 8rem 0;
+    &-content {
+      .heading {
+        margin-bottom: 8rem;
+      }
+      .form{
+        
       }
     }
   }

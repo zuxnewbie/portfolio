@@ -8,6 +8,7 @@
     .about-me {
       margin-bottom: 9rem;
       .title {
+        display: block;
         font-size: 4rem;
         text-transform: uppercase;
         letter-spacing: 3px;
@@ -16,6 +17,7 @@
         color: var(--color-black);
       }
       .sub {
+        display: block;
         text-align: center;
         color: var(--color-grey);
         font-size: 2rem;
@@ -37,16 +39,22 @@
           margin-bottom: 3rem;
         }
         .des {
+          margin-bottom: 6rem;
           p {
             font-size: 1.8rem;
             color: var(--color-grey);
             max-width: 60rem;
             line-height: 1.7;
             margin-bottom: 1rem;
+            a{
+              text-decoration: underline;
+              font-weight: 700;
+              color: #7843E9;
+              margin: 0 3px;
+            }
           }
         }
         .btn-ct {
-          margin-top: 3rem;
           text-transform: uppercase;
           letter-spacing: 1px;
           font-weight: 700;
@@ -57,7 +65,7 @@
           font-size: 1.6rem;
           padding: 1.5rem 5rem;
           color: var(--color-white);
-          background: var(--color-white);
+          background: #7843E9;
         }
       }
       .skills {
@@ -81,6 +89,12 @@
           }
         }
       }
+    }
+  }
+  @include resTL {
+    &-content {
+      grid-template-columns: 1fr;
+      grid-gap: 8rem;
     }
   }
 }

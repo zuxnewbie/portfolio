@@ -9,8 +9,7 @@ function Section3() {
                 <h2 className="title">
                     <span className='main'>Projects</span>
                     <span className='sub'>
-                        Here you will find some of the personal and clients projects that I
-                        created with each project containing its own case study
+                        Tại đây bạn sẽ tìm thấy một số dự án cá nhân mà tôi đã tạo ra, mỗi dự án đều có nghiên cứu tình huống riêng.
                     </span>
                 </h2>
                 <div className="projects-content">
@@ -20,8 +19,8 @@ function Section3() {
                         </div>
                         <div className="right">
                             <h3>Dopefolio</h3>
-                            <span>abcd</span>
-                            <Link href={'#'} ></Link>
+                            <span>Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally</span>
+                            <Link href={'#'} >Case Study</Link>
                         </div>
                     </div>
                 </div>

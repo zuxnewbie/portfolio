@@ -1,10 +1,13 @@
 @use "@/app/globals.scss" as *;
 
 .home-hero {
-  background-image: url("../../assets/img/common-bg.png");
+  background-image: url("../../assets/img/bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 100vh;
+  min-height: 80rem;
+  max-height: 120rem;
   position: relative;
   &-content {
     margin: 0 auto;
@@ -13,6 +16,7 @@
     align-items: center;
     flex-direction: column;
     gap: 4rem;
+    height: 100%;
     .my-name {
       font-size: 6rem;
       text-transform: uppercase;
@@ -47,8 +51,8 @@
         box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
         transition: transform 0.3s;
 
-        &:hover{
-            transform: translateY(-6px);
+        &:hover {
+          transform: translateY(-6px);
         }
       }
     }

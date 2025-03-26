@@ -6,24 +6,24 @@ function Section4() {
     <div className="section-4 ">
       <div className="section-4-content container-pub">
           <h2 className="heading">
-            <span className='title'>Contact</span>
-            <span className='des'>abcd</span>
+            <span className='title'>Liên Hệ</span>
+            <span className='des'>Hãy liên hệ với tôi bằng cách gửi biểu mẫu bên dưới và tôi sẽ trả lời bạn sớm nhất có thể</span>
           </h2>
           <div className="form">
             <form action="">
               <div className="field">
-                <label htmlFor="">Name</label>
-                <input type="text" name="" id="" placeholder='Enter your name'/>
+                <label htmlFor="">Tên</label>
+                <input type="text" name="" id="" placeholder='Vui lòng nhập tên của bạn'/>
               </div>
               <div className="field">
               <label htmlFor="">Email</label>
-              <input type="text" name="" id="" placeholder='Enter your email'/>
+              <input type="text" name="" id="" placeholder='Vui lòng nhập Email của bạn'/>
               </div>
               <div className="field">
-                <label htmlFor="">Email</label>
-                <textarea name="" id="" cols={30} rows={10} placeholder='Enter your message'></textarea>
+                <label htmlFor="">Lời nhắn</label>
+                <textarea name="" id="" cols={30} rows={10} placeholder='Để lại lời nhắn ở đây'></textarea>
               </div>
-              <button className='btn-contact'>Submit</button>
+              <button className='btn-contact'>Gửi</button>
             </form>
           </div>
       </div>

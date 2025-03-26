@@ -9,7 +9,7 @@
 
     --color-white: #fff;
     --color-black: #000;
-    --color-grey: #ccc;
+    --color-grey: #333;
     --color-primary: #002b97;
     --color-primary-dark: #0e2b4c;
     --color-primary-light: #d8f4ff;
@@ -82,8 +82,8 @@
     --color-orange-900: #7c2d12;
 }
 
-$MB: 425px;
-$TL: 768px;
+$MB: 600px;
+$TL: 900px;
 $LAP: 1024px;
 $BLAP: 1440px;
 
@@ -270,12 +270,12 @@ span {
 }
 
 .container-pub {
-    @media screen and (min-width: 1400px) {
-        width: 1400px !important;
+    @media screen and (min-width: 1220px) {
+        width: 1220px !important;
     }
 
-    @media screen and (max-width: 1400px) {
-        width: 1200px !important;
+    @media screen and (max-width: 1220px) {
+        width: 98vw !important;
     }
 
     @media screen and (max-width: 1200px) {
