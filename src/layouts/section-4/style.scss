@@ -2,14 +2,10 @@
 
 .section-4 {
   padding: 12rem 0;
-  background: linear-gradient(
-        to right,
-        rgba(245, 245, 245, 0.8),
-        rgba(245, 245, 245, 0.8)
-      )
-      center center / cover,
-    url(../../assets/img/bg.jpg);
-      background-position: center center;
+  background-image: url("../../assets/img/ct.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   &-content {
     margin: auto;
     .heading {

@@ -44,7 +44,7 @@ function Navbar() {
             </div>
             <div className="header__sm-menu">
                 <div className="content">
-                    <ul className="list">
+                    { isOpen && <ul className="list">
                         <li className="list-links">
                             <Link href={'#'} className='link-item'>HOME</Link>
                         </li>
@@ -59,6 +59,7 @@ function Navbar() {
                             <Link href={'#'} className='link-item'>CONTACT</Link>
                         </li>
                     </ul>
+                    }
                 </div>
             </div>
         </header>

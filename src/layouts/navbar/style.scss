@@ -16,10 +16,10 @@
       display: flex;
       align-items: center;
       cursor: pointer;
-      color: #333;
+      color: var(--color-grey);
       transition: color 0.3s;
       &:hover {
-        color: #7843e9;
+        color: var(--color-purple);
       }
       .logo-img {
         width: 5rem;
@@ -27,7 +27,7 @@
         border-radius: 50px;
         overflow: hidden;
         margin-right: 1.5rem;
-        background: #7843e9;
+        background: var(--color-purple);
         .my-image {
           width: 100%;
           height: 100%;
@@ -57,7 +57,7 @@
             font-weight: 700;
             transition: color 0.3s;
             &:hover {
-              color: #7843e9;
+              color: var(--color-purple);
             }
           }
         }
@@ -71,33 +71,33 @@
     }
   }
 
-  &__sm-menu{
+  &__sm-menu {
     display: none;
     background: var(--color-white);
     position: absolute;
     width: 100%;
     top: 100%;
-    transition: all .3s;
+    transition: all 0.3s;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
-    .content{
-        .list{
-            .list-links{
-                .link-item{
-                    display: block;
-                    padding: 2.5rem 3rem;
-                    font-size: 1.6rem;
-                    color: var(--color-grey-600);
-                    text-align: left;
-                    font-weight: 700;
-                    letter-spacing: 2px;
-                    transition: color .3s;
-                    border-top: 1px solid var(--color-grey-400);
-                }
-            }
+    .content {
+      .list {
+        .list-links {
+          .link-item {
+            display: block;
+            padding: 2.5rem 3rem;
+            font-size: 1.6rem;
+            color: var(--color-grey-600);
+            text-align: left;
+            font-weight: 700;
+            letter-spacing: 2px;
+            transition: color 0.3s;
+            border-top: 1px solid var(--color-grey-400);
+          }
         }
+      }
     }
-}
+  }
 
   @include resTL {
     &__content {
@@ -110,8 +110,8 @@
         }
       }
     }
-    &__sm-menu{
-        display: block;
+    &__sm-menu {
+      display: block;
     }
   }
 }

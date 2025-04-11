@@ -10,7 +10,9 @@
     --color-white: #fff;
     --color-black: #000;
     --color-grey: #333;
+    --color-purple: #7843e9;
     --color-primary: #002b97;
+
     --color-primary-dark: #0e2b4c;
     --color-primary-light: #d8f4ff;
     --color-primary-light2: #bae6f8;
@@ -275,11 +277,11 @@ span {
     }
 
     @media screen and (max-width: 1220px) {
-        width: 98vw !important;
+        width: 95vw !important;
     }
 
     @media screen and (max-width: 1200px) {
-        width: 95vw !important;
+        width: 90vw !important;
     }
 }
 

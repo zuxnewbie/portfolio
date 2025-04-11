@@ -46,10 +46,10 @@
             max-width: 60rem;
             line-height: 1.7;
             margin-bottom: 1rem;
-            a{
+            a {
               text-decoration: underline;
               font-weight: 700;
-              color: #7843E9;
+              color: var(--color-purple);
               margin: 0 3px;
             }
           }
@@ -65,7 +65,7 @@
           font-size: 1.6rem;
           padding: 1.5rem 5rem;
           color: var(--color-white);
-          background: #7843E9;
+          background: var(--color-purple);
         }
       }
       .skills {
@@ -93,8 +93,10 @@
   }
   @include resTL {
     &-content {
-      grid-template-columns: 1fr;
-      grid-gap: 8rem;
+      .info-skill {
+        grid-template-columns: 1fr;
+        grid-gap: 8rem;
+      }
     }
   }
 }
